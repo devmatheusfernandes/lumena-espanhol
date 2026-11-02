@@ -1,0 +1,20 @@
+<!doctype html><html lang="pt-BR"><head><title>Área da professora | Lúmena</title><meta name="robots" content="noindex">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/admin.css"></head>
+<body class="adm">
+<div class="demo">Protótipo: os dados ficam só neste navegador. Senha de demonstração: <b>lumena</b></div>
+<div id="login" class="login"><form class="box" id="lf"><a class="logo" href="../index.html"><i></i>Lúmena</a><div><h2 style="font-size:2rem">Olá, Sofia.</h2><p style="color:var(--muted)">Entre para ver quem está na lista de espera.</p></div>
+<div class="field"><label>Senha</label><input type="password" id="pw" autocomplete="current-password" style="padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);font:inherit"></div><p class="err" id="le" hidden>Senha incorreta.</p><button class="btn noarrow" style="justify-content:center">Entrar</button></form></div>
+<div id="app" hidden>
+ <div class="bar"><div class="wrap"><a class="logo" style="color:var(--cream)" href="../index.html"><i></i>Lúmena · Lista de espera</a><div><a href="../index.html">Ver site</a><a href="#" id="out">Sair</a></div></div></div>
+ <div class="wrap">
+  <div class="stats"><div class="stat"><b id="s1">0</b><span>na lista</span></div><div class="stat"><b id="s2">0</b><span>novos (sem contato)</span></div><div class="stat"><b id="s3">0</b><span>em aula experimental</span></div><div class="stat"><b id="s4">0</b><span>matriculados</span></div></div>
+  <div class="panel"><h3 style="font-size:1.1rem;margin-bottom:14px">Objetivo dos interessados</h3><div class="dist" id="dist"></div></div>
+  <div class="panel">
+   <div class="tools"><input type="text" id="q" placeholder="Buscar por nome ou contato"><select id="fs"><option value="">Todos os status</option></select><select id="fn"><option value="">Todos os níveis</option></select><select id="fo"><option value="">Todos os objetivos</option></select><button class="btn sm ghost noarrow" id="csv">Exportar CSV</button></div>
+   <div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Aluno</th><th>Nível</th><th class="hm">Objetivo</th><th class="hm">Horário</th><th>Status</th><th class="hm">Recebido</th></tr></thead><tbody id="tb"></tbody></table></div><div class="empty" id="empty" hidden>Nenhum resultado.</div>
+  </div>
+ </div>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="dr" aria-live="polite"></aside>
+<script src="../js/admin.js"></script></body></html>
