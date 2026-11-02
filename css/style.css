@@ -258,3 +258,22 @@ footer a{text-decoration:none;margin-right:20px}footer a:hover{color:var(--sun)}
 .phero .wrap.formsplit{grid-template-columns:.85fr 1.15fr;align-items:start}
 @media(max-width:900px){.phero .wrap.formsplit{grid-template-columns:1fr;gap:30px}.phero{padding-top:110px}}
 .credit{margin-top:6px;font-size:.85rem}.credit b{color:var(--cream);font-weight:600}
+.split.alt{grid-template-columns:.8fr 1.2fr}
+html{overflow-x:clip}
+@media(max-width:900px){.split,.split.alt{grid-template-columns:1fr;gap:34px}.faq{max-width:none}}
+.flips>*{min-width:0}
+@media(max-width:900px){
+ .flips{gap:12px}.flip{height:170px}
+ .flip .f{padding:18px}
+ .flip .front b,.flip .back b{font-size:clamp(1.25rem,5.6vw,1.7rem);overflow-wrap:anywhere}
+ .bubble{max-width:62vw}
+ section{padding:80px 0}
+ .hero{padding-top:110px}
+}
+@media(max-width:900px){
+ .art{height:410px}
+ .bubble.b1{top:22%;left:0}
+ .bubble.b2{top:49%;right:0}
+ .bubble.b3{top:76%;left:4%;bottom:auto}
+ .sun{top:0;right:2%}
+}
